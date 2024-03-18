@@ -61,6 +61,17 @@
   border-radius: 4px 0 0 4px;
 }
 
+.heroes .badge-x {
+  display: inline-block;
+  font-size: small;
+  color: white;
+  padding: 0.8em 1em 0 1em;
+  background-color: #405061;
+  line-height: 1em;
+  margin-right: 0.8em;
+  border-radius: 4px 0 0 4px;
+}
+
 .heroes .name {
   align-self: center;
 }

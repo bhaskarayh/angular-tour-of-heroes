@@ -16,13 +16,24 @@
             <span class="name">{{hero.name}}</span>
         </button>
     </li>
+    <li>
+        <button type="button" (click)="onClearHero()">
+            <span class="badge-x">x</span>
+            <span class="name">Clear Hero</span>
+        </button>
+    </li>
 </ul>
 
-<div *ngIf="selectedHero">
+
+
+
+<!-- <div *ngIf="selectedHero">
     <h2>{{selectedHero.name | uppercase}} Details</h2>
     <div><span>id: </span>{{selectedHero.id}}</div>
 
     <div><label for="name">Hero name:</label>
         <input type="text" id="name" [(ngModel)]="selectedHero.name" placeholder="name">
     </div>
-</div>
+</div> -->
+
+<app-hero-detail [hero]="selectedHero"></app-hero-detail>
